@@ -1,0 +1,126 @@
+* {
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;;
+}
+#container2 {
+    display:flex;
+    flex-direction:column;
+    justify-content:start;
+    align-items:center;
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    width:580px;
+    background-color: rgb(241, 240, 246);
+    padding: 10px;
+}
+#input {
+    width:580px;
+    height:55px;
+}
+#inputcity {
+    width:550px;
+    height:45px;
+    border:1px solid rgb(229, 228, 231);
+    border-radius: 6px;
+    margin-bottom: 10px;
+    float:right;
+}
+#inputcity_icon {
+    color:rgb(103, 103, 104);
+    font-size: 25px;
+    width:10px;
+    height:45px;
+    float:left;
+    vertical-align: center;
+    padding:5px;
+}
+#city {
+    width:580px;
+    height:60px;
+}
+#citynow {
+    width:580px;
+    height:100px;
+}
+#now {
+    display:block;
+    float:left;
+    width: 180px;
+    height:35px;
+    text-align:center;
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 30px;
+    font:13px/40px "Microsoft";
+    border:solid 1px rgb(12, 162, 235);
+}
+#city_now,
+#hot_city {
+    width:580px;
+    height:10px;
+    font-size: 10px;
+    color:rgb(161, 160, 164);
+    margin-top:10px;
+}
+#add {
+    width:580px;
+    padding-bottom:10px;  
+}
+#addhistory,
+#d {
+    font-size: 10px;
+    color:rgb(161, 160, 164);
+}
+#addhistory {
+    float:left;
+}
+#d {
+    float:right;
+}
+#historycity {
+    display:flex;
+    flex-direction: row;
+    justify-content: start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    width:580px;
+    padding-top: 20px;
+    padding-bottom:20px;  
+}
+.box {
+    display:block;
+    float:left;
+    width: 180px;
+    height:35px;
+    text-align:center;
+    background-color: white;
+    border-radius: 8px;
+    font:13px/40px "Microsoft";
+    border:solid 1px rgb(229, 229, 231);
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+#hot {
+    display:flex;
+    flex-direction: row;
+    justify-content: start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    width:580px;
+    padding-top: 20px;
+}
+#broad {
+    display:none;
+    background-color: inherit;
+}
+.na {
+    width:580px;
+    height:35px;
+    border-bottom: 0.5px solid rgb(220, 219, 225);
+    font:13px/35px "Microsoft";
+    color:grey;
+    background-color: inherit;
+}
