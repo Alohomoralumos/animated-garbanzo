@@ -1,0 +1,72 @@
+{
+  "id": "3093632",
+  "name": "yunxingkaohe",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "8691108",
+      "name": "菜单_收起",
+      "font_class": "caidan_shouqi",
+      "unicode": "e864",
+      "unicode_decimal": 59492
+    },
+    {
+      "icon_id": "630095",
+      "name": "向左箭头",
+      "font_class": "xiangzuojiantou",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    },
+    {
+      "icon_id": "10793880",
+      "name": "下拉菜单",
+      "font_class": "xialacaidan",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "8628975",
+      "name": "空气质量",
+      "font_class": "kongqizhiliang",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "1269",
+      "name": "加",
+      "font_class": "jia",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "4748103",
+      "name": "病毒",
+      "font_class": "bingdu",
+      "unicode": "e7c6",
+      "unicode_decimal": 59334
+    },
+    {
+      "icon_id": "16199697",
+      "name": "口罩",
+      "font_class": "kouzhao",
+      "unicode": "e970",
+      "unicode_decimal": 59760
+    },
+    {
+      "icon_id": "16204084",
+      "name": "病毒",
+      "font_class": "bingdu1",
+      "unicode": "e9db",
+      "unicode_decimal": 59867
+    },
+    {
+      "icon_id": "16204145",
+      "name": "口罩",
+      "font_class": "kouzhao1",
+      "unicode": "ea18",
+      "unicode_decimal": 59928
+    }
+  ]
+}

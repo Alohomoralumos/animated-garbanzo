@@ -1,0 +1,313 @@
+*{
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    list-style: none;
+}
+#container1 {
+    display:flex;
+    flex-direction:column;
+    justify-content:start;
+    align-items:center;
+    position:absolute;
+    left:50%;
+    transform: translateX(-50%);
+    width:580px;
+    background-color: rgb(54, 136, 199);
+    padding: 10px;
+}
+#city {
+    width:100px;
+    padding-bottom:15px;
+    font-size:15px;
+    color:white;
+}
+#city::before {
+    content: '\e600';
+    font-family:'iconfont';
+    color:rgb(14, 102, 158);
+}
+.nav {
+    width:550px;
+}
+#epidemic ,#go_out {
+    display:block;
+    width:130px;
+    height:36px;
+    border-radius: 18px;
+    background-color:rgb(51, 102, 153);
+    color:white;
+    text-align: center;
+    font:15px/36px "Microsoft";
+}
+#epidemic {
+    float:left;
+}
+#go_out {
+    float:right;
+}
+#iconbingdu ,#iconkouzhao{
+    display:block;
+    height:26px;
+    width:26px;
+    margin-left: 15px;
+    margin-top: 5px;
+    color:white;
+    float:left;
+    border-radius: 50%;
+    font-size: 16px;
+    line-height: 30px;
+}
+#iconkouzhao {
+    background-color: rgb(79, 160, 239);
+}
+#iconbingdu {
+    background-color: rgb(252, 201, 20);
+}
+#yinqingyuxue {
+    align-self: flex-start;
+    padding-top: 46px;
+    height: 25px;
+    font-size:20px;
+    color:white;
+}
+#temp {
+    height: 80px;
+    align-self: flex-start;
+}
+#C {
+    height:80px;
+    margin-top:30px;
+    font:100px/40px "Microsoft";
+    color: white;
+    float:left;
+}
+#after {
+    height:40px;
+    width:40px;
+    font:30px/40px  "Microsoft";
+    color:white;
+    float:left;
+}
+#main {
+    padding-top: 20px;
+    width:580px;
+    height:60px;
+}
+#text {
+    height:20px;
+    font:14px/20px "Microsoft";
+    color:white;
+    width:500px;
+    float:left;
+}
+#wind {
+    height:20px;
+    font:13px/20px "Microsoft";
+    color:white;
+    float:left;
+}
+#aircondition {
+    width:80px;
+    height:30px;
+    margin-top:-10px;
+    background-color: rgb(51, 102, 153);
+    color:white;
+    font:10px/30px "Microsoft";
+    border-radius:15px;
+    float:right;
+    text-align: center;
+}
+#iconkongqi {
+    display:block;
+    float:left;
+    background-color:rgb(213, 173, 13);
+    height:22px;
+    width:22px;
+    border-radius: 11px;
+    text-align: center;
+    line-height: 22px;
+    font-size: 15px;
+    margin-left: 5px;
+    margin-top:5px;
+}
+#weather {
+    border-top:solid rgb(14, 102, 158) 1px;
+    border-bottom: solid rgb(14, 102, 158) 1px;
+    width:600px;
+    height:60px;
+}
+#weather #today {
+    width:279px;
+    height:60px;
+    border-right:solid rgb(14, 102, 158) 1px;
+    float:left;
+    padding:10px;
+}
+#weather #tomorrow {
+    width:280px;
+    height:60px;
+    float:right;
+    padding:10px;
+}
+#sun {
+    width:580px;
+    height:10px;
+    background-color: rgb(38, 107, 174);
+    padding:10px;
+}
+#chart3,
+#chart4 {
+    display:none;
+    width:600px;
+    background-color: rgb(38, 107, 174);
+    height:80px;
+}
+#sun #sunset,
+#sun #hour,
+#sun #temppandwindd #tempp,
+#sun #temppandwindd #windd {
+    color:white;
+    font:10px/5px "Microsoft";
+}
+#sun #caidan {
+    justify-self: self-end;
+    width:10px;
+    height:10px;
+    font-size:20px;
+    line-height: 10px;
+    color:white;
+    float:right;
+    margin-left:5px;
+}
+#sun #sunset,
+#sun #temppandwindd {
+    float:left;
+}
+#sun #temppandwindd {
+    width:300px;
+    height:10px;
+}
+#sun #temppandwindd #tempp,
+#sun #temppandwindd #windd {
+    display:none;
+    float:left;
+    height:5px;
+    width:45px;
+    padding:5px;
+}
+#sun #temppandwindd #tempp,
+#sun #temppandwindd #windd {
+    text-align: center;
+}
+
+#sun #hour {
+    float:right;
+}
+#today #today-firstline,
+#today #today-secondline,
+#tomorrow #tomorrow-firstline,
+#tomorrow #tomorrow-secondline {
+    width:300px;
+    height:25px;
+    color:white;
+    font:13px/20px "Microsoft";
+}
+#today #tod_condi,
+#tomorrow #tom_condi {
+    display:inline-block;
+    width:40px;
+    height:20px;
+    text-align: center;
+    background-color:rgb(215, 175, 14);
+    border-radius:10px;
+    margin-left: 5px;
+}
+#today #tod_tem,
+#tomorrow #tom_tem {
+    display:block;
+    float:right;
+    margin-right:15px;
+}
+#next-sixdays-top,
+#next-sixdays-bottom {
+    width:600px;
+}
+#next-sixdays-top {
+    height:90px;
+}
+#next-sixdays-bottom {
+    height:140px;
+}
+#next-sixdays-top > span:nth-child(n),
+#next-sixdays-bottom > span:nth-child(n) {
+    display:block;
+    float:left;
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width:80px;
+    padding:10px;
+}
+#next-sixdays-top #s_text,
+#next-sixdays-top #t_text,
+#next-sixdays-top #icon_s,
+#next-sixdays-top #icon_t {
+    margin-top:10px;
+}
+#iconcloud_tod,
+#iconcloud_tom {
+    float:right;
+    width:20px;
+    height:20px;
+    transform:translateX(-15px);
+    font-size:20px;
+}
+#next-sixdays-top #s_text,
+#next-sixdays-top #t_text {
+    color:white;
+    font-size:10px;
+}
+#next-sixdays-top #icon_s,
+#next-sixdays-top #icon_t {
+    color:white;
+    font-size:23px;
+}
+#next-sixdays-top #s #s_,
+#next-sixdays-top #t #t_,
+#next-sixdays-top #t_1 #t_1_,
+#next-sixdays-top #t_2 #t_2_,
+#next-sixdays-top #t_3 #t_3_,
+#next-sixdays-top #t_4 #t_4_ {
+    color:white;
+    font-size:15px;
+}
+#chart1,
+#chart2 {
+    width:800px;
+    height:100px;
+}
+#next-sixdays-bottom span[id^="bottom"] > span:nth-child(1) {
+    color:white;
+    font-size:23px;
+}
+#next-sixdays-bottom span[id^="bottom"] > span:nth-child(2),
+#next-sixdays-bottom span[id^="bottom"] > span:nth-child(3),
+#next-sixdays-bottom span[id^="bottom"] > span:nth-child(4) {
+    color:white;
+    font-size:10px;
+    margin-top:10px;
+}
+#next-sixdays-bottom span[id^="bottom"] > span:nth-child(5) {
+    color:white;
+    font-size: 10px;
+}
+#next-sixdays-bottom span[id^="bottom"] > span:nth-child(3) {
+    display:block;
+    width:55px;
+    height:20px;
+    border-radius: 10px;
+    background-color: rgb(213, 173, 13);
+    text-align: center;
+}

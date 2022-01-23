@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择城市</title>
+    <link rel="stylesheet" type="text/css" href="iconfont.css"></link>
+    <link rel="stylesheet" type="text/css" href="choosecities.css"></link>
+    <link rel="stylesheet" type="text/css" href="L4-more.css" media="screen and (min-width:600px)"></link>
+    <link rel="stylesheet" type="text/css" href="L4-more-more.css" media="screen and (max-width:600px)"></link>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/qweather-icons@1.1.0/font/qweather-icons.css">
+    <script src="echarts.min.js"></script>
+    <script src="weather.js"></script>
+</head>
+    <div id="container2">
+        <div id="input">
+            <div id="inputcity_icon" class="iconfont icon-xiangzuojiantou"></div>
+            <form id="form">
+                <input type="text" placeholder="请输入城市名" id="inputcity">
+            </form>
+        </div>
+    <div id="search">
+    <div id="city_now">当前城市</div>
+    <div id="citynow">
+        <span id="now">北京市</span>
+    </div>
+    <div id="add">
+        <span id="addhistory">添加记录</span>
+        <span id="d">删除</span>
+    </div>
+    <div id="historycity">
+        <span class="box">北京市</span>
+    </div>
+    <div id="hot_city">热搜城市</div>
+    <div id="hot">
+        <span class="box">北京市</span>
+        <span class="box">广州市</span>
+        <span class="box">上海市</span>
+        <span class="box">深圳市</span>
+        <span class="box">杭州市</span>
+        <span class="box">沈阳市</span>
+        <span class="box">大连市</span>
+    </div>
+    </div>
+    <div id="broad"></div>
+    </div>
+
+    <div id="container1">
+        <div id="city">北京市</div>
+        <div class="nav">
+            <span id="epidemic"><span class="iconfont icon-bingdu" id="iconbingdu"></span>疫情资讯</span>
+            <span id="go_out"><span class="iconfont icon-kouzhao1" id="iconkouzhao"></span>安全出行</span>
+        </div>
+        <div id="yinqingyuxue"></div>
+        <div id="temp">
+            <div id="C"></div>
+            <span id="after">°</span>
+        </div>
+        <div id="main">
+            <div id="wind"></div>
+            <div id="text"></div>
+            <div id="aircondition">
+                <span id="iconkongqi" class="iconfont icon-kongqizhiliang"></span>
+                <span id="aircondition_text"></span>
+            </div>
+        </div>
+        <div id="weather">
+            <div id="today">
+                <div id="today-firstline">
+                    <span>今天</span>
+                    <sapn id="tod_condi"></sapn>
+                    <span id="tod_tem"></span>
+                </div>
+                <div id="today-secondline">
+                    <span id="tod_text"></span>
+                    <span id="iconcloud_tod"></span>
+                </div>
+            </div>
+            <div id="tomorrow">
+                <div id="tomorrow-firstline">
+                    <span>明天</span>
+                    <sapn id="tom_condi"></sapn>
+                    <span id="tom_tem"></span>
+                </div>
+                <div id="tomorrow-secondline">
+                    <span id="tom_text"></span>
+                    <span id="iconcloud_tom"></span>
+                </div>
+            </div>
+        </div>
+        <div id="sun">
+            <div id="sunset"></div>
+            <div id="temppandwindd">
+                <div id="tempp">温度</div>
+                <div id="windd">风力</div>
+            </div>
+            <div id="caidan" class="iconfont icon-xialacaidan"></div>
+            <div id="hour">24小时</div>
+        </div>
+        <div id="chart3"></div>
+        <div id="chart4"></div>
+        <div id="next-sixdays-top">
+            <span id="s">
+               <span id="s_"></span>
+               <span id="s_text"></span>
+               <span id="icon_s"></span>
+            </span>
+            <span id="t">
+                <span id="t_"></span>
+                <span id="t_text"></span>
+                <span id="icon_t"></span>
+            </span>
+            <span id="t_1">
+                <span id="t_1_"></span>
+                <span id="t_text"></span>
+                <span id="icon_t"></span>
+            </span>
+            <span id="t_2">
+                <span id="t_2_"></span>
+                <span id="t_text"></span>
+                <span id="icon_t"></span>
+            </span>
+            <span id="t_3">
+                <span id="t_3_"></span>
+                <span id="t_text"></span>
+                <span id="icon_t"></span>
+            </span>
+            <span id="t_4">
+                <span id="t_4_"></span>
+                <span id="t_text"></span>
+                <span id="icon_t"></span>
+            </span>
+        </div>
+        <div id="chart1"></div>
+        <div id="chart2"></div>
+        <div id="next-sixdays-bottom">
+            <span id="bottom_s">
+               <span id="icon_b_s"></span>
+               <span id="b_text_s"></span>
+               <span id="air_b_s"></span>
+               <span id="wind_b_s"></span>
+               <span id="wind_b_level_s"></span>
+            </span>
+            <span id="bottom_t">
+                <span id="icon_b"></span>
+                <span id="b_text"></span>
+                <span id="air_b"></span>
+                <span id="wind_b"></span>
+                <span id="wind_b_level"></span>
+            </span>
+            <span id="bottom_t_1">
+                <span id="icon_b"></span>
+                <span id="b_text"></span>
+                <span id="air_b"></span>
+                <span id="wind_b"></span>
+                <span id="wind_b_level"></span>
+            </span>
+            <span id="bottom_t_2">
+                <span id="icon_b"></span>
+                <span id="b_text"></span>
+                <span id="air_b"></span>
+                <span id="wind_b"></span>
+                <span id="wind_b_level"></span>
+            </span>
+            <span id="bottom_t_3">
+                <span id="icon_b"></span>
+                <span id="b_text"></span>
+                <span id="air_b"></span>
+                <span id="wind_b"></span>
+                <span id="wind_b_level"></span>
+            </span>
+            <span id="bottom_t_4">
+                <span id="icon_b"></span>
+                <span id="b_text"></span>
+                <span id="air_b"></span>
+                <span id="wind_b"></span>
+                <span id="wind_b_level"></span>
+            </span>
+        </div>
+    </div>
+    <script>
+        container1.style.display = 'none';
+        d.addEventListener('click',()=>
+        {
+            let h = document.querySelectorAll('#historycity span[class="box"]'); 
+            for(let i = 0;i < h.length; i++)
+            {
+                h[i].style.display = 'none';
+            }
+        });
+        let flag = 0;
+        inputcity.onchange =()=> {
+            search.style.display = 'none';
+            broad.style.display = 'block';
+            let k = inputcity.value;
+            async function key(k) {
+                let res = await fetch(`https://geoapi.qweather.com/v2/city/lookup?key=f6693c190c87420fb7e3f5de32ce66ba&location=${k}`);
+                let ret = await res.json();
+                console.log(ret);
+                
+                if(ret.code == 200)
+                {
+                    for(let i = 0; i < 10; i++)
+                    {
+                        naname = ret.location[i].name;
+                        let na = document.createElement('li');
+                        na.className = 'na';
+                        na.innerText = naname;
+                        broad.append(na);
+                        na.onclick = () =>
+                        {
+                            let box = document.createElement('span');
+                            box.className = 'box';
+                            box.innerText = ret.location[i].name;
+                            now.innerText = ret.location[i].name;
+                            historycity.prepend(box);
+                            container2.style.display = 'none';
+                            container1.style.display = 'flex';
+                            city.innerText = ret.location[i].name;
+                            let loca = ret.location[i].id;
+                            all(loca);
+                        }
+                    }
+                    flag = 1;
+                }
+            }
+            key(k);
+            let n = document.querySelectorAll('.na');
+            if(k == '') 
+            {
+                for(let i = 0; i < 10; i++)
+                {
+                    n[i].remove();
+                }
+                search.style.display = 'block';
+                broad.style.display = 'none';
+            }
+        }
+        city.onclick=()=>
+    {
+    container1.style.display = 'none';
+    container2.style.display = 'flex';
+    }
+let cities = document.querySelectorAll('span[class="box"]');
+for(let i = 0; i < 8; i++)
+{
+    let name = cities[i].innerText;
+    cities[i].onclick=()=>
+    {
+        let history = document.createElement('span');
+        history.className = 'box';
+        history.innerText = name;
+        historycity.prepend(history);
+        now.innerText = name;
+        city.innerText = name;
+        loca_id = name;
+        async function cities(loca_id)
+        {
+            let res = await fetch(`https://geoapi.qweather.com/v2/city/lookup?key=f6693c190c87420fb7e3f5de32ce66ba&location=${loca_id}`);
+            let ret = await res.json();
+            loca = ret.location[0].id;
+            container1.style.display = 'flex';
+            container2.style.display = 'none';
+            all(loca);
+        }
+        cities(loca_id);
+    }
+}
+    inputcity_icon.onclick=()=>
+    {
+        container1.style.display = 'flex';
+        container2.style.display = 'none';
+    }
+    </script>
+</body>
+</html>
